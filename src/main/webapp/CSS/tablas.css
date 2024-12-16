@@ -1,0 +1,52 @@
+/* Estilo de la tabla de usuarios */
+table {
+    width: 80%; /* Ajusta el ancho de la tabla */
+    border-collapse: collapse; /* Elimina el espacio entre las celdas */
+    margin-top: 20px;
+    background-color: #ffffff;
+    color: #333;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Línea de separación entre filas */
+}
+
+table th {
+    background-color: #0B0B0B; /* Fondo oscuro para la cabecera */
+    color: #ffffff; /* Texto blanco */
+    font-weight: bold;
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1; /* Fondo claro al pasar el cursor */
+    transition: background-color 0.3s;
+}
+
+table tbody tr:last-child td {
+    border-bottom: none; /* Elimina la línea de separación en la última fila */
+}
+
+/* Estilos para los botones de acciones */
+button {
+    background-color: #0B0B0B; /* Color del botón */
+    color: #ffffff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #555; /* Color del botón al hacer hover */
+    transform: scale(1.05); /* Efecto de agrandamiento en hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil en hover */
+}
+
+

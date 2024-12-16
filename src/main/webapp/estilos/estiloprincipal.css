@@ -1,0 +1,209 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+        
+.logo-imagen {
+    width: 70px;  /* Ajusta el ancho a tu preferencia */
+    height: auto;  /* Mantiene la proporción de la imagen */
+    object-fit: contain; /* Asegura que la imagen se ajuste sin distorsionarse */
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+}
+
+.header-icons .icon {
+    margin: 0 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.header-icons .icon:hover {
+    color: #e74c3c; /* Cambia de color al hacer hover */
+}
+
+.header-icons .icon-text {
+    font-size: 1rem;
+    margin-left: 5px;
+}
+
+.header-icons .cart-counter {
+    background-color: #e74c3c;
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 0 5px;
+    font-size: 0.8rem;
+    margin-left: 5px;
+}
+
+/* Estilo para la barra de búsqueda */
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ccc; /* Borde inicial para el contorno */
+    background-color: transparent; /* Fondo transparente inicialmente */
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 300px; /* Ajusta la anchura según tu preferencia */
+    transition: background-color 0.3s, border-color 0.3s; /* Animación al cambiar el estilo */
+}
+
+.search-bar i {
+    font-size: 18px; /* Tamaño del ícono */
+    color: #ccc; /* Color del ícono inicial */
+    margin-right: 10px; /* Espacio entre el ícono y la barra */
+    transition: color 0.3s; /* Animación para el color del ícono */
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    background-color: transparent; /* Fondo transparente para el input */
+    font-size: 16px;
+    width: 100%; /* Ocupa el espacio restante */
+    color: #333; /* Color del texto */
+}
+
+        /* Cambia el estilo cuando el input esté en foco */
+.search-bar input:focus {
+    background-color: #fff; /* Fondo blanco cuando se hace clic */
+    color: #333; /* Color del texto */
+}
+
+.search-bar:focus-within {
+    background-color: #fff; /* Fondo blanco cuando hay foco en la barra de búsqueda */
+    border-color: #333; /* Color del borde cuando hay foco */
+}
+
+.search-bar:focus-within i {
+    color: #333; /* Color del ícono cuando hay foco */
+}
+
+.icon-buttons {
+    display: flex; /* Asegura que los elementos estén en una fila */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+.icon-buttons a {
+    padding: 0 10px; /* Espacio interno alrededor del enlace */
+    background-color: transparent;
+    border: none;
+    margin-left: 0px;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.icon-buttons a:hover {
+    color: #0B0B0B; /*Color del boton cuando pasa el mouse por encima*/
+}
+
+/* Estilo para la barra vertical */
+.separator {
+    border-left: 2px solid white; /* Estilo de la barra vertical */
+    height: 30px; /* Altura de la barra */
+    margin: 0 10px; /* Espaciado a los lados de la barra */
+}
+
+/* Estilo del menú flotante */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Mostrar el contenido del menú al hacer clic */
+.show {
+    display: block;
+}
+
+/* Estilo para el contenido principal */
+main {
+    background: linear-gradient(180deg, #b3b3b3 0%, #0B0B0B 100%), 
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    padding: 20px; /* Espaciado interno para el contenido */
+    min-height: calc(100vh - 80px); /* Ajusta el alto del contenido según el footer y header */
+    color: white; /* Color del texto */
+    display: flex; /* Permite usar flexbox */
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center; /* Centra el contenido */
+    justify-content: center; /* Centra verticalmente */
+    text-align: center; /* Centra el texto */
+    margin-bottom: 60px; /* Asegura que el footer no se superponga */
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo del footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-container {
+    display: flex; /* Usa Flexbox para el layout */
+    justify-content: center; /* Centra horizontalmente las columnas */
+    align-items: center; /* Centra verticalmente las columnas */
+    text-align: center; /* Centra el texto en las columnas */
+    max-width: 1200px; /* Ancho máximo del footer */
+    margin: 0 auto; /* Centra el footer en la página */
+}
+
+.footer-column {
+    flex: 1; /* Cada columna ocupará el mismo espacio */
+    padding: 10px; /* Espaciado alrededor del texto */
+}
